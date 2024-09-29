@@ -1,0 +1,42 @@
+import pygame
+
+# Initialize pygame
+pygame.init()
+
+# Set up the screen
+screen = pygame.display.set_mode((640, 480))
+
+# Set title of the window
+pygame.display.set_caption("Pong")
+
+# Load the paddle images
+paddle1_img = pygame.image.load("paddle1.png")
+paddle2_img = pygame.image.load("paddle2.png")
+
+# Set up the paddles
+paddle1 = Paddle(screen, paddle1_img)
+paddle2 = Paddle(screen, paddle2_img)
+
+# Set up the ball
+ball = Ball(screen)
+
+# Game loop
+while True:
+    # Handle events
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
+    # Move the paddles and check for collisions with the ball
+    paddle1.move(ball)
+    paddle2.move(ball)
+
+    # Check for collisions between the ball and the paddles
+    if ball.collides_with(paddle1):
+        ball.bounce()
+    elif ball.collides_with(paddle2):
+        ball.bounce()
+
+    # Update the screen
+    pygame.display.flip()
