@@ -1,0 +1,3 @@
+from technical_analysis import moving_average
+
+ma = moving_average(data['close'], period=20)
