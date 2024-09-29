@@ -1,0 +1,14 @@
+import ollama
+
+class ReACTAgent:
+    def __init__(self, prompt):
+        self.prompt = prompt
+        self.ollama_model = ollama.OllamaModel()
+
+    def interact(self, user_input):
+        # Implement the interaction logic here
+        pass
+
+    def get_response(self, user_input):
+        # Implement the response generation logic here
+        return "I don't have enough information to provide a response."
