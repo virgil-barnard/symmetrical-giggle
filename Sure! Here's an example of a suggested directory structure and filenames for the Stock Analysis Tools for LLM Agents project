@@ -1,0 +1,33 @@
+stock-analysis-tools/
+├── data_fetcher/
+│   ├── __init__.py
+│   ├── data_fetcher.py
+│   └── ...
+├── technical_analysis/
+│   ├── __init__.py
+│   ├── moving_average.py
+│   ├── rsi.py
+│   ├── macd.py
+│   └── ...
+├── machine_learning/
+│   ├── __init__.py
+│   ├── linear_regression.py
+│   ├── decision_tree.py
+│   └── ...
+├── automation/
+│   ├── __init__.py
+│   ├── trading_bot.py
+│   └── ...
+├── integration/
+│   ├── __init__.py
+│   ├── brokerage_api.py
+│   └── ...
+├── tests/
+│   ├── test_data_fetcher.py
+│   ├── test_technical_analysis.py
+│   ├── test_machine_learning.py
+│   ├── test_automation.py
+│   └── ...
+├── requirements.txt
+├── LICENSE
+└── README.md
