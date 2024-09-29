@@ -1,3 +1,0 @@
-from llm_agent import analyze_sentiment
-
-sentiment = analyze_sentiment('AAPL')

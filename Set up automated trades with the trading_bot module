@@ -1,4 +1,0 @@
-from trading_bot import TradingBot
-
-bot = TradingBot(strategy='mean_reversion')
-bot.run()

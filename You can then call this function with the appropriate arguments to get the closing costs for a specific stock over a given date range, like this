@@ -1,2 +1,0 @@
-closing_costs = get_closing_costs('AAPL', '2019-01-01', '2019-12-31')
-print(closing_costs)
