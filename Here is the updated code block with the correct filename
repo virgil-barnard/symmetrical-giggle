@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Get the operating system name and version
+OS=$(uname -s)
+VERSION=$(uname -r)
+
+# Get the architecture
+ARCH=$(arch)
+
+# List USB devices connected to the system
+USB_DEVICES=$(lsusb)
+
+# Print the information
+echo "Operating System: $OS"
+echo "Version: $VERSION"
+echo "Architecture: $ARCH"
+echo "USB Devices:"
+echo "$USB_DEVICES"
